@@ -37,7 +37,7 @@ Before you begin, make sure you have:
 
 ### 1. Clone the Repository
 ```bash
-git 
+git clone https://github.com/EAllaucaD/webhook_app.git
 ```
 ### 2. Commands and Execute
 
@@ -60,3 +60,6 @@ You can create a new team and delete a team by entering the ID.
 
 ## 🎨 Preview
 
+![image](https://github.com/user-attachments/assets/190b405b-6363-4613-95e2-7d9d0cd0976e)
+
+![image](https://github.com/user-attachments/assets/e8e9cc06-0a9b-4465-a9e8-9b601629d2c4)
