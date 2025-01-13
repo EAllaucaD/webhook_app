@@ -1,55 +1,62 @@
-# About the project
-# Webhook PHP
+# **APP WITH WEBHOOK AND PHP**
+
+## 📋 Table of Contents
+
+1. [📖 About the Project](#-about-the-project)
+2. [🛠️ Tools Used](#%EF%B8%8F-tools-used)
+3. [📋 Prerequisites](#-prerequisites)
+4. [🚀 Project Usage](#-project-usage)
+5. [📜 Preview]()
+
+---
+
+## 📖 About the Project
+
+This project demonstrates basic webhook communication between a client and a server. The client sends a JSON payload via a POST request to the server, which processes the data and logs the information received. The server responds with a success message to recognize the webhook. This setup can be extended for event-based systems, notifications, and integrations between different services.
 
 
-This is a simple demo application that demonstrates how to set up and use a webhook for communication between a client and a server. 
+## 🛠️ Tools Used
 
-## Technologies Used
-- **PHP**: Server-side programming language.
-- **JSON**: Data format for sending and receiving information.
-- **HTTP POST Requests**: Method for client-server communication.
+**PHP:** The core language for implementing both the client and server.
+**PHP Development Server:** Built-in server to run the application locally.
+**JSON:** Data format used to send and receive the webhook payload.
+**log files:** Used for saving and logging the received webhooks.
 
-## Prerequisites
+## 📋 Prerequisites
 
-Before running this application, make sure you have the following installed:
+Before you begin, make sure you have:
 
-- **PHP** (v7 or higher)
-  - Download PHP from [here](https://www.php.net/downloads.php).
+**PHP****  for running the PHP scripts locally.
 
-- **A web browser** to test the app in a local environment (e.g., Chrome, Firefox).
+**A code editor**  e.g., Visual Studio Code or similar.
 
-## Setup and Installation
 
-1. Clone or download this repository to your local machine.
-   
-2. Navigate to the root folder of the application using your terminal or command prompt.
+---
 
-3. Run the PHP server by executing the following command:
+## 🚀 Project Usage
 
-   ```bash
-   php -S localhost:8000 -t webhook
+### 1. Clone the Repository
+```bash
+git 
+```
+### 2. Commands and Execute
 
-His command starts the PHP server on port 8000 in the webhook directory.
+Start the Webhook Server:
+To start the server, navigate to the directory where the server.php file is located and run:
+```
+    php -S localhost:8000 -t path/to/project/folder
+```
+To send a webhook from the client to the server, run the following command in other terminal:
 
-4. To test the client, open another terminal window and run the following command to send a request to the server:
+```
+    php client.php
 
-   ```bash
-   php client.php
+```
+The server logs are saved in a file called webhook.log. You can check this file for details about the webhook requests that have been received.
 
-This command sends a webhook request to the server and displays the server's response.
 
-## How to Use
 
-The server.php file listens for POST requests sent to /server.php.
-The client.php file sends a POST request to the server with a JSON payload containing a message and timestamp.
-After processing the request, the server:
-Logs the received data to a logs/webhook_log.txt file.
-Responds with a success message and the received data.
-The client outputs the server's response to the terminal.
-Logging
-The server logs the data received from the client in the logs/webhook_log.txt file. This file contains:
+You can create a new team and delete a team by entering the ID.
 
-The timestamp when the data was received.
-The JSON data sent by the client.
+## 🎨 Preview
 
-## Results:
